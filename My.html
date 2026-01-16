@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Induwara Bodhigamage - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.7;
+      color: #2c2c2c;
+      background-color: #fafafa;
+    }
+    
+    nav {
+      background-color: #1a1a2e;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #4a90e2;
+    }
+    
+    header {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 120px 25px 100px 25px;
+    }
+    
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    
+    header p {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      font-weight: 300;
+    }
+    
+    .contact-btn {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #4a90e2;
+      padding: 13px 32px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-top: 15px;
+      transition: all 0.1s;
+    }
+    
+    .contact-btn:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-2px);
+    }
+    
+    section {
+      padding: 70px 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    
+    section:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    
+    section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.2rem;
+      color: #1a1a2e;
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #4a90e2;
+    }
+    
+    .about-container {
+      display: flex;
+      gap: 45px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    
+    .about-text {
+      flex: 1;
+    }
+    
+    .about-text p {
+      margin-bottom: 18px;
+      text-align: justify;
+      line-height: 1.8;
+      color: #444;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 20px;
+    }
+    
+    .skill-box {
+      background-color: #ffffff;
+      padding: 28px;
+      border: 2px solid #e0e0e0;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    
+    .skill-box:hover {
+      border-color: #4a90e2;
+      box-shadow: 15px 15px 15px rgba(74, 144, 226, 0.1);
+    }
+    
+    .skill-box h3 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .skill-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skill-box li {
+      padding: 6px 0;
+      color: #555;
+      position: relative;
+      padding-left: 22px;
+    }
+    
+    .skill-box li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+    
+    #projects {
+      background-color: #fafafa;
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 20px;
+    }
+    
+    .project-box {
+      background-color: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.30);
+      transition: all 0.3s;
+      border: 1px solid #e8e8e8;
+    }
+    
+    .project-box:hover {
+      box-shadow: 15px 15px 15px rgba(0,0,0,0.12);
+      transform: translateY(-4px);
+    }
+    
+    .project-header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+    .project-content {
+      padding: 25px;
+    }
+    
+    .project-content h3 {
+      color: #1a1a2e;
+      margin-bottom: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+    .project-content p {
+      color: #666;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .tag {
+      background-color: #e8f4ff;
+      color: #4a90e2;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+    
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      margin-top: 20px;
+    }
+    
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .contact-item {
+      background-color: #ffffff;
+      padding: 22px;
+      border-radius: 6px;
+      border-left: 4px solid #4a90e2;
+      box-shadow: 15px 15px 15px rgba(0,0,0,0.06);
+    }
+    
+    .contact-item h3 {
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    
+    .contact-item p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    
+    .message-form {
+      background-color: #ffffff;
+      padding: 35px;
+      border-radius: 6px;
+      box-shadow: 15px 15px 15px rgba(0,0,0,0.08);
+    }
+    
+    .input-group {
+      margin-bottom: 22px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #2c2c2c;
+      font-size: 0.95rem;
+    }
+    
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.5s;
+    }
+    
+    .input-group input:focus,
+    .input-group textarea:focus {
+      outline: none;
+      border-color: #4a90e2;
+    }
+    
+    .send-button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 13px 28px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+    
+    .send-button:hover {
+      background-color: #3a7bc8;
+    }
+    
+    footer {
+      background-color: #1a1a2e;
+      color: #e8e8e8;
+      text-align: center;
+      padding: 35px 25px;
+    }
+    
+    .social-media {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    .social-media a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .social-media a:hover {
+      color: #4a90e2;
+    }
+    
+    footer p {
+      font-size: 0.92rem;
+      color: #b8b8b8;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      
+      header p {
+        font-size: 1rem;
+      }
+      
+      nav ul {
+        gap: 18px;
+        padding: 0 15px;
+      }
+      
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .about-text p {
+        text-align: center;
+      }
+      
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+      
+      section {
+        padding: 50px 20px;
+      }
+      
+      section h2 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">My Contents</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#other">Projects</a></li>
+    </ul>
+  </nav>
+<label for="text">
+  <!-- Home/Header Section -->
+  <header id="home">
+  <img src="bgiu.jpg" width="350px" hight="350px"><br><br>
+    <h1>Induwara Bodhigamage</h1>    
+    <p>Content Creater | Photographer | Gamer</p>
+    <a href="#contact" class="contact-btn">Get in Touch</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          Hi there! I'm have just sat for the GCE Advanced Level examination. I have applied for a hospital worker job and am waiting to be called for the interview.
+
+        </p>
+        <p>
+         I also work as a content creator & Photografer. I do it in my free time. Apart from that, I am a gamer. I play Freefire the most. My id is 9959735179. If there are people who want to play Freefire with me, send me a whatsapp message
+        </p>
+        <p>
+          When I'm not studying or coding, I like exploring new technologies, 
+          reading network and IOT related blogs, and working on personal projects to improve my skills. 
+          I believe in continuous learning and always trying to be better than yesterday.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript Basics</li>
+	  <li>Php Basics</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python </li>
+          <li>Pascal</li>
+          <li>SQL</li>
+          <li>Ardiuno & IOT</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Tools & Software</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Audacity</li>
+          <li>Capcut</li>
+          <li>Microsoft Office</li>
+          <li>Photoshop</li>
+          <li>Wordpress</li>
+          <li>Adobe Flash</li>
+          <li>Photoshop</li>
+          <li>Coreldraw</li>
+          <li>Canva</li>
+          <li>Wokwi</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>Content Creating</li>
+          <li>Team Collaboration</li>
+          <li>Photography</li>
+          <li>Time Management</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Contents</h2>
+    <div class="projects-grid">
+      <div class="project-box">
+        <div class="project-header">FreeFire<br></div>
+        <div class="project-content">
+          <p>
+Free Fire is a multiplayer battle royale mobile game developed by Garena for Android and iOS. It became the most downloaded mobile game globally in 2021 and is known for its engaging gameplay, where players battle to be the last survivor. As of now, it is considered one of the most popular mobile battle royale games, surpassing competitors like PUBG Mobile and Call of Duty: Mobile. 
+             <br><a href="https://ff.garena.com/en">Download</a>
+          </p>
+          <div class="tags">
+            <span class="tag" >CS</span>
+            <span class="tag">BR</span>
+            <span class="tag">Carfland</span>
+            <span class="tag">Longwulf</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-box">
+        <div class="project-header">Indonesia Bus Simulation</div>
+        <div class="project-content">
+          <p>
+           Bus Simulator Indonesia is an entertaining driving game that allows you to see what it is like to be a bus driver in Indonesia. More than the simple gameplay, it also lets you customize plenty, from the graphics to the controls. However, the game could use optimizationto live up to its promise of providing an authentic experience.
+<br><a href="https://play.google.com/store/apps/details?id=com.maleo.bussimulatorid&hl=en-US">Download</a>
+          </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+
+<div class="project-box">
+        <div class="project-header">Mine contents</div>
+        <div class="project-content">
+          <p>
+             I have uploaded videos made from my photos on my youtube, tiktok, and facebook accounts. If you search for induwara bodhigamage on youtube, tiktok, and facebook social media networks, you will see my accounts. Go to them and click the follow and subscribe buttons to support me.
+<br><a href="https://www.tiktok.com/@induwarabodhigamage?_r=1&_t=ZS-935L12w7IaP">Tiktok</a>
+&nbsp&nbsp&nbsp<a href="https://www.facebook.com/share/1GdYBqSpbj/">Facebook</a>
+&nbsp&nbsp&nbsp<a href="http://www.youtube.com/@MrInduwaOfficial">Youtube</a>
+          </p>
+          <div class="tags">
+            <span class="tag">Youtube Shorts</span>
+            <span class="tag">Tiktok</span>
+            <span class="tag">Facebook Reels</span>
+          </div>
+        </div>
+      </div>
+
+<div class="project-box">
+        <div class="project-header">Euro Truck Simulater</div>
+        <div class="project-content">
+          <p>
+            Euro Truck Simulator 2 is a truck simulation game that offers a realistic and immersive experience for players. The game features a vast European map, with over 60 cities and a selection of licensed trucks from real-life manufacturers. Players can engage in both truck driving and business simulation, starting as a solo driver and building their own logistics company. The game emphasizes realism, including mechanics like fuel consumption, wear and tear, and sleep cycles. Euro Truck Simulator 2 also supports extensive modding, allowing players to expand gameplay with thousands of mods from the community. The game has been critically acclaimed and continues to be a popular choice among simulation game enthusiasts.
+<br><a href="https://eurotrucksimulator2.com/download.php">Download</a>
+          </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-header">Clash Of Cans</div>
+        <div class="project-content">
+          <p>
+Clash of Clans is a popular mobile strategy game where players build and upgrade their villages, train armies, and engage in battles against other players and clans.
+Gameplay Mechanics
+Village Building: Players construct and upgrade various buildings, including resource collectors, defenses, and army training facilities. The goal is to create a stronghold that can withstand enemy attacks while efficiently gathering resources like Gold, Elixir, and Dark Elixir. 
+2
+Troop Types: The game features a variety of troops, including Barbarians, Archers, Wizards, and Dragons, each with unique abilities. Players can customize their army composition to develop effective strategies for attacking enemy bases. 
+1
+Clan System: Players can join or create clans, allowing them to collaborate with others, participate in Clan Wars, and earn rewards. Clan dynamics play a crucial role in the game, as teamwork can lead to significant advantages in battles.
+<br><a href="https://www.bing.com/ck/a?!&&p=8150ee9f024ea7f225749b9eff943e0426c9243f078f6e008e77a659559bc352JmltdHM9MTc2ODQzNTIwMA&ptn=3&ver=2&hsh=4&fclid=30e7b0c2-15c9-6335-0196-a4d1148c623a&psq=about+clash+of+clans&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vcGMtc3RvcmUvZ2FtZXMvZGV0YWlscz9pZD1jb20uc3VwZXJjZWxsLmNsYXNob2ZjbGFucyZobD1lbg">Download</a>
+	  </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>          </div>
+        </div>
+      </div>
+      
+      <div class="project-box">
+        <div class="project-header">Srilanka Bus Simulation</div>
+        <div class="project-content">   
+          <p>
+Driving Simulator Srilanka is a free simulation game that allows players to experience driving in a realistic environment inspired by Sri Lanka. The game features a variety of driving scenarios, including city driving, village driving, hill driving, and off-road driving. Players can customize their bus design using texture design settings, adding a personal touch to their driving experience. The game is available for download on Android devices and offers a detailed and engaging driving experience with various features such as realistic AI traffic, sky systems, and high-end graphics support.
+<br><a href="https://play.google.com/store/apps/details?id=com.DCGames.DrivingSimulatorSrilanka&hl=en-US">Download</a>
+          </p>
+          <div class="tags">
+           <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="other">
+    <h2>Projects</h2>
+    <div class="about-container">
+      <div class="about-text">
+<center>
+<table>
+<tr><img src="b2k.png" width="250px" height="250px" alt="Web logo"></tr>
+<tr><img src="kcdl.png" width="250px" height="250px" alt="Web logo"></tr>
+<tr><img src="iubo.jpg" width="250px" height="250px" alt="Web logo"></tr>
+<tr><img src="iubm.jpg" width="250px" height="250px" alt="Web logo"></tr>
+<tr>
+</table>
+</center>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-wrapper">
+      <div class="contact-details">
+        <div class="contact-item">
+          <h3>Email Address</h3>
+          <p>iubgamage27@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <h3>Phone Number</h3>
+          <p>+94 78 517 69 52</p>
+        </div>
+        <div class="contact-item">
+          <h3>Location</h3>
+          <p>Tangalle, Sri Lanka</p>
+        </div>
+        <div class="contact-item">
+          <h3>School</h3>
+          <p>H/Tangalle Boy's National School</p>
+        </div>
+      </div>
+      </lable>
+      <div class="message-form">
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="send-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a href="https://github.com/Induwara007" target="_blank">GitHub</a> | 
+      <a href="https://www.tiktok.com/@induwarabodhigamage?_r=1&_t=ZS-935L12w7IaP" target="_blank">Tiktok</a> | 
+      <a href="https://www.facebook.com/share/1GdYBqSpbj/" target="_blank">Facebook</a> | 
+      <a href="http://www.youtube.com/@MrInduwaOfficial" target="_blank"> Youtube</a> | 
+      <a href="mailto:iubgamage27@gmail.com">Email</a>
+    </div>
+    <p>&copy; 2025@InduwaraBodhigamage. All Rights Reserved.</p>
+  </footer>
+</label>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
