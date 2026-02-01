@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Induwara Bodhigamage | IUB Official</title>
+
+
+
+<link rel="icon" type="image/x-icon" href="bgiu.jpg">
+<!-- SEO -->
+<meta name="description" content="Ultimate professional portfolio of Your Name">
+<meta property="og:title" content="Induwara Bodhigamage">
+<meta property="og:description" content="Projects, music, creativity & code">
+<meta name="theme-color" content="#38bdf8">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:   ;
+  color: white;
+  text-align: center;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: white;
+}
+
+.progress-bar {
+  height: 20px;
+  background: red;
+  width: 0%;
+}
+
+
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  margin-top:70px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: navy;
+  font-size: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  margin-bottom50px; 
+}
+
+#about1 {
+  top: 20px;
+  background-color: LightGray;
+}
+
+#blog1 {
+  top: 80px;
+  background-color: aqua;
+}
+
+#projects2 {
+  top: 140px;
+  background-color: violet;
+}
+
+#contact1 {
+  top: 200px;
+  background-color: yellow;
+}
+
+
+
+.bar{
+ background:#111827;
+ border-radius:20px;
+ overflow:hidden;
+ margin:10px 0
+}
+ 
+
+/* PROJECT IMAGE */
+.project img{
+ width:50%;
+ border-radius:15px;
+ margin-bottom:10px
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+ gap:10px
+}
+.card{
+ background:var(--glass);
+ backdrop-filter:blur(12px);
+ border-radius:20px;
+ padding:10px;
+ width:100%;
+ transition:.4s
+}
+.card:hover{
+ transform:translateY(-12px) scale(1.02);
+ box-shadow:0 0 30px rgba(56,189,248,.4)
+}
+.fill11{height:100%;background:var(--accent);border-radius:20px;width:90% ;}
+.fill12{height:100%;background:var(--accent);border-radius:20px;width:50% ;}
+.fill13{height:100%;background:var(--accent);border-radius:20px;width:20% ;}
+.fill14{height:100%;background:var(--accent);border-radius:20px;width:12.4% ;}
+.fill15{height:100%;background:var(--accent);border-radius:20px;width:7% ;}
+.fill16{height:100%;background:var(--accent);border-radius:20px;width:1.234% ;}
+.fill17{height:100%;background:var(--accent);border-radius:20px;width:10% ;}
+.fill18{height:100%;background:var(--accent);border-radius:20px;width:13.3567% ;}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+.chatbot{
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ width:370px;
+ height:600px;
+ background:rgba(2,6,23,.95);
+ border-radius:20px;
+ display:none;
+ flex-direction:column;
+ box-shadow:0 0 40px rgba(56,189,248,.5)
+}
+.chatbot header{
+ padding:15px;
+ background:var(--primary);
+ color:white;
+ font-weight:700;
+ border-radius:20px 20px 0 0
+}
+.chatbot .body{
+ padding:15px;
+ height:100px;
+ overflow:auto;
+ font-size:14px
+}
+.chatbot input{
+ border:none;
+ padding:12px;
+ border-radius:0 0 20px 20px;
+ outline:none
+}
+.chat-btn{
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ background:var(--primary);
+ color:black;
+ padding:15px;
+ border-radius:50%;
+ cursor:pointer
+}
+
+
+.projects1-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+}
+
+
+.project1-card {
+background: #f4f4f4;
+padding: 1.5rem;
+border-radius: 10px;
+text-align: center;
+}
+
+
+.project1-card h3 {
+margin-bottom: 1rem;
+}
+
+
+.project1-card p {
+margin-bottom: 1.5rem;
+}
+
+ .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .about-text p {
+        text-align: center;
+      }
+      
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+      
+      section {
+        padding: 50px 20px;
+      }
+      
+      section h2 {
+        font-size: 1.9rem;
+      }
+
+
+   .social-media {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    .social-media a {
+      color: #e8e8e8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .social-media a:hover {
+      color: #4a90e2;
+    }
+
+
+    .education {
+      padding: 80px 20px;
+      background-color: #f8f9fa;
+    }
+
+    .education-item {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.education-header h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin: 0;
+    flex: 1;
+}
+
+.education-duration {
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.education-institution {
+    color: #0066cc;
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: 1.05rem;
+}
+
+.education-description {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+ .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 20px;
+    }
+    
+    .skill-box {
+      background-color: #ffffff;
+      padding: 28px;
+      border: 2px solid #e0e0e0;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    
+    .skill-box:hover {
+      border-color: #4a90e2;
+      box-shadow: 15px 15px 15px rgba(74, 144, 226, 0.1);
+    }
+    
+    .skill-box h3 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .skill-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skill-box li {
+      padding: 6px 0;
+      color: #555;
+      position: relative;
+      padding-left: 22px;
+    }
+    
+    .skill-box li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+
+    #projects {
+      background-color: #fafafa;
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 20px;
+    }
+    
+    .project-box {
+      background-color: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.30);
+      transition: all 0.3s;
+      border: 1px solid #e8e8e8;
+    }
+    
+    .project-box:hover {
+      box-shadow: 15px 15px 15px rgba(0,0,0,0.12);
+      transform: translateY(-4px);
+    }
+    
+    .project-header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+    .project-content {
+      padding: 25px;
+    }
+    
+    .project-content h3 {
+      color: #1a1a2e;
+      margin-bottom: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+    .project-content p {
+      color: #666;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .tag {
+      background-color: #e8f4ff;
+      color: #4a90e2;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+
+:root{
+--bg:#0f172a;--card:#020617;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;
+}
+.light{
+--bg:#f8fafc;--card:#fff;--text:#020617;--muted:#475569;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);overflow-x:hidden}
+
+/* LOADER */
+#loader{
+position:fixed;inset:0;background:#020617;
+display:flex;align-items:center;justify-content:center;
+z-index:9999;color:#38bdf8;font-size:2rem
+}
+
+/* CURSOR */
+.cursor{
+width:12px;height:12px;border-radius:50%;
+background:#38bdf8;position:fixed;pointer-events:none;
+transform:translate(-50%,-50%);z-index:999
+}
+
+/* PARTICLES */
+canvas{position:fixed;inset:0;z-index:-1}
+
+/* NAV */
+nav{
+position:fixed;top:0;width:100%;z-index:10;
+display:flex;justify-content:space-between;align-items:center;
+padding:1rem 2rem;background:rgba(2,6,23,.85);backdrop-filter:blur(10px)
+}
+nav a{color:var(--text);margin-left:1rem;text-decoration:none}
+
+/* HERO */
+header{
+min-height:100vh;display:flex;align-items:center;justify-content:center;
+text-align:center;padding:2rem
+}
+h1{
+text-shadow: 4px 4px #FF0000;
+font-size:3.5rem
+}
+.typing{
+color:var(--accent)
+}
+.btn{
+display:inline-block;margin-top:2rem;padding:.8rem 2rem;
+background:var(--accent);color:#020617;border-radius:30px;
+text-decoration:none;font-weight:600
+}
+
+/* SECTIONS */
+section{max-width:1100px;margin:auto;padding:6rem 2rem}
+h2{
+font-size:2.5rem;
+margin-bottom:1rem
+}
+p{color:var(--muted)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+
+/* SKILLS */
+.skill{margin:1rem 0}
+.bar{height:10px;background:#1e293b;border-radius:20px}
+.fill1{height:100%;background:var(--accent);border-radius:20px;width:80% ;}
+.fill2{height:100%;background:var(--accent);border-radius:20px;width:70% ;}
+.fill3{height:100%;background:var(--accent);border-radius:20px;width:20% ;}
+.fill4{height:100%;background:var(--accent);border-radius:20px;width:50% ;}
+.fill5{height:100%;background:var(--accent);border-radius:20px;width:50% ;}
+.fill6{height:100%;background:var(--accent);border-radius:20px;width:50% ;}
+
+    .about-container {
+      display: flex;
+      gap: 45px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    
+    .about-text {
+      flex: 1;
+    }
+    
+    .about-text p {
+      margin-bottom: 18px;
+      text-align: justify;
+      line-height: 1.8;
+      color: #444;
+    }
+
+/* TESTIMONIAL */
+.slider{display:flex;gap:1.5rem;overflow:auto}
+.slide{min-width:280px;background:var(--card);padding:1.5rem;border-radius:14px}
+
+/* CONTACT */
+input,textarea{
+width:100%;padding:.8rem;margin-top:.6rem;
+border-radius:10px;border:none
+}
+
+/* SCROLL TOP */
+#top{
+position:fixed;bottom:20px;right:20px;
+background:#38bdf8;color:#020617;
+padding:.6rem .8rem;border-radius:50%;cursor:pointer;display:none
+}
+
+/* FOOTER */
+footer{text-align:center;padding:3rem;color:var(--muted)}
+
+@media(max-width:600px){h1{font-size:2.3rem}}
+</style>
+</head>
+
+<body>
+<label for="text">
+<div id="loader">Loading…</div>
+<div class="cursor"></div>
+<canvas id="bg"></canvas> 
+<nav>
+<strong>Induwara Bodhigamage - IUB Official</strong>
+<div>
+<a href="#home"><i class="fa fa-home"></i>&nbspHome</a>
+<a href="#about"><i class="fa fa-address-book"></i>&nbspAbout</a>
+<a href="#skills"><i class="fa fa-bar-chart-o"></i>&nbspSkills</a>
+<a href="#projects1"><i class="fa fa-database"></i>&nbspProjects</a>
+<a href="#certification"><i class="fa fa-file-zip-o"></i>&nbspCertification</a>
+<a href="#educations"><i class="fa fa-graduation-cap"></i>&nbspEducations</a>
+<a href="#contents"><i class="fa fa-film"></i>&nbspContents</a>
+<a href="#platforms"><i class="fa fa-flag-checkered"></i>&nbspPlatforms</a>
+<a href="#contact"><i class="fa fa-phone"></i>&nbspContact</a>
+<a href="#map"><i class="fa fa-map-o"></i>&nbspMap</a>
+<span onclick="toggleTheme()">🌗</span>
+</div>
+</nav>
+
+<header id="home">
+<div class="reveal">
+<h1>Hello, I'M <span class="typing"></span></h1>
+<p>Game • Contents • Music • Photography • Frontend Development</p>
+<a class="btn" href="resume.jpg" download><i class="fa fa-download"></i>&nbspDownload Resume</a>
+</div>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="https://www.youtube.com/watch?v=AePTR0EMMTM&list=PLQmCm4fsWvqaUQnYrl9c88WYGoz_KOVnw" id="about1">Normal Songs</a>
+  <a href="https://www.youtube.com/watch?v=F5u6mhCl1os&list=PLQmCm4fsWvqaf_AJwRMWYWlw6IAzppWRb" id="blog1">Nonstop Songs</a>
+  <a href="https://www.youtube.com/watch?v=IJlkgSGze1c&list=PLQmCm4fsWvqYX0UoPIF3eWJHTIVfT5rNc" id="projects2">EDM Songs</a>
+  <a href="https://www.youtube.com/playlist?list=PLQmCm4fsWvqaH_dha7IJTKKcVSVRJg4JP" id="contact1">English Songs</a>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<section id="about" class="reveal">
+<h2>About Me</h2>
+<img src="bgiu.jpg" width="300px" height="300px"> <br><br>
+<p>Hi there! I'm have just sat for the GCE Advanced Level examination. I have applied for a hospital worker job and am waiting to be called for the interview.
+<br><br>
+I also work as a content creator & Photografer. I do it in my free time. Apart from that, I am a gamer. I play Freefire the most. My id is 9959735179. If there are people who want to play Freefire with me, send me a whatsapp message
+<br><br>
+When I'm not studying or coding, I like exploring new technologies, reading network and IOT related blogs, and working on personal projects to improve my skills. I believe in continuous learning and always trying to be better than yesterday..</p>
+<br><br>
+<table>
+<tr>
+<td><p><a class="btn" href="https://www.facebook.com/induwara.bodhigamage?rdid=BflnJUzCWBvbd99A&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1GdYBqSpbj%252F#">Facebook</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://www.tiktok.com/@induwarabodhigamage?_r=1&_t=ZS-935L12w7IaP">Tiktok</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://wa.me/+94785176952by/?text=Hello+Induwara+Bodhigamage">Whatsapp</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://dribbble.com/induwara-bodhigamage">Dribbble</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://github.com/Induwara007">Github</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://wokwi.com/dashboard/profile">Wokwi</a></p></td>
+<td></td><td></td><td></td><td></td>
+<td><p><a class="btn" href="https://bsky.app/profile/induwara007.bsky.social">Bluesky</a></p></td>
+</tr>
+</table>
+</section>
+
+<section id="skills" class="reveal">
+<h2>Skills</h2>
+<div class="skill">HTML<div class="bar"><div class="fill1" data="80%"></div></div></div>
+<div class="skill">CSS<div class="bar"><div class="fill2" data="70%"></div></div></div>
+<div class="skill">JavaScript<div class="bar"><div class="fill3" data="20%"></div></div></div>
+<div class="skill">PHP<div class="bar"><div class="fill4" data="50%"></div></div></div>
+<div class="skill">SQL<div class="bar"><div class="fill5" data="50%"></div></div></div>
+<div class="skill">Python<div class="bar"><div class="fill5" data="50%"></div></div></div>
+
+<br><br>
+ <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript Basics</li>
+	  <li>Php Basics</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python </li>
+          <li>Pascal</li>
+          <li>SQL</li>
+          <li>Ardiuno & IOT</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Tools & Software</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Audacity</li>
+          <li>Capcut</li>
+          <li>Microsoft Office</li>
+          <li>Photoshop</li>
+          <li>Wordpress</li>
+          <li>Adobe Flash</li>
+          <li>Photoshop</li>
+          <li>Coreldraw</li>
+          <li>Canva</li>
+          <li>Wokwi</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>Content Creating</li>
+          <li>Team Collaboration</li>
+          <li>Photography</li>
+          <li>Time Management</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+<section id="projects1" class="reveal">
+<h2>My Projects</h2>
+<br>
+<div class="projects-grid">
+<div class="project-card">
+<img src="iubo.jpg" width="250px" height="250px">
+<h3>IUB Official</h3>
+<p>A responsive web application built with HTML, CSS, and JavaScript.</p>
+<a href="https://github.com/Induwara007/IUB_Official.git" class="btn">View Project</a>
+</div>
+<div class="project-card">
+<img src="iubm.jpg" width="250px" height="250px">
+<h3>IUB Music</h3>
+<p>An e-commerce website created using React and Node.js.</p>
+<a href="https://github.com/Induwara007/IUB-Music.git" class="btn">View Project</a>
+</div>
+<div class="project-card">
+<img src="b2k.png" width="250px" height="250px">
+<h3>B2K Mr.Indu</h3>
+<p>A personal blog website developed with Next.js and Tailwind CSS.</p>
+<a href="https://github.com/Induwara007/B2K.Mr_Indu.git" class="btn">View Project</a>
+</div>
+<div class="project-card">
+<img src="bgiu.jpg" width="250px" height="250px">
+<h3>Portfolio</h3>
+<p>A responsive web application built with HTML, CSS, and JavaScript.</p>
+<a href="https://github.com/Induwara007/Portfolio.git" class="btn">View Project</a>
+</div>
+<div class="project-card">
+<img src="ipm.jpg" width="250px" height="250px">
+<h3>IUB Paper Master</h3>
+<p>An e-commerce website created using React and Node.js.</p>
+<a href="https://github.com/Induwara007/IUB_Paper_master.git" class="btn">View Project</a>
+</div>
+<div class="project-card">
+<img src="iubos.jpg" width="250px" height="250px">
+<h3>IUB Online Store</h3>
+<p>A personal blog website developed with Next.js and Tailwind CSS.</p>
+<a href="https://github.com/Induwara007/IUB_Online_store.git" class="btn">View Project</a>
+</div>
+
+</div>
+</section>
+<section id="certification" class="reveal">
+<h2>Certification</h2>
+   <div class="about-container">
+      <div class="about-text">
+ <div class="project-box">
+        <div class="project-header">Adventure Based Traning (25.09.2023 - 27.09.2023)</div>
+        <div class="project-content">   
+          <p>
+This Certificate is awarded to Mr.I.U Bodhigamage on successfull completion of a <b>3-Day Advanture Based Traning</b> with personal development & leadership conducted by <b>National Youth Corps Traning centre , weeraketiya</b> 
+<a href="3 Day Advanture Based Training.pdf">View Certificate</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+<br>
+ <div class="about-container">
+      <div class="about-text">
+            <div class="project-box">
+        <div class="project-header">Life Skills Traning Programe (04.08.2023 - 08.12.2023)</div>
+        <div class="project-content">   
+          <p>
+Mr.I.U Bodhigamage has successfully completed the <b>Life Skills Traning Programe</b> conducted at the <b>National Youth Corps Traning centre , weeraketiya</b> 
+<a href="Life Skills Traning Programe.pdf">View Certificate</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+<br>
+ <div class="about-container">
+      <div class="about-text">
+            <div class="project-box">
+        <div class="project-header">Advanced certificate in English (22.01.2024)</div>
+        <div class="project-content">   
+          <p>
+Induwara Upamal Bodhigamage has successfully compelted the required course work and passed the perscribed examinations and was awarded the<b> Advanced certification in English</b> 
+<a href="Advanced Certificate in English.pdf">View Certificate</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+<br>
+<!--
+<div class="sticky">I will stick to the screen when you reach my scroll position</div>
+<br>
+-->
+ <div class="about-container">
+      <div class="about-text">
+            <div class="project-box">
+        <div class="project-header">Advanced certificate in Information & Communication Technology (22.01.2024)</div>
+        <div class="project-content">   
+          <p>
+Induwara Upamal Bodhigamage has successfully compelted the required course work and passed the perscribed examinations and was awarded the<b> Advanced certificate in Information & Communication Technology</b> 
+<a href="Advanced Certificate In Information Communication Technology.pdf">View Certificate</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+</section>
+
+<section id="educations" class="reveal">
+<h2>Educations</h2>
+
+
+<!-- <div class="slider">
+<div class="slide">“Insanely good work.”</div>
+<div class="slide">“Top-tier creativity.”</div>
+</div> -->
+
+
+ <div class="education-item">
+            <div class="education-header">
+                <h3>G.C.E  Ordinary Level</h3>
+                <span class="education-duration">2020 - 2022</span>
+            </div>
+            <p class="education-institution">H/Kotawaya National School - Agunukolapelessa</p>
+            <p class="education-description">
+                <a href="Result Sheet.pdf">Result Sheet</a> 
+            </p>
+        </div>
+
+ <div class="education-item">
+            <div class="education-header">
+                <h3>G.C.E  Advanced Level</h3>
+                <span class="education-duration">2023 - 2025</span>
+            </div>
+            <p class="education-institution">H/Tangalle Boy's National School - Tangalle</p>
+            <p class="education-description">
+                 <a href="#">Result pending....</a>
+            </p>
+        </div>
+
+ <div class="education-item">
+            <div class="education-header">
+                <h3>Dip in Information Technology  - LPEC CAMPUS</h3>
+                <span class="education-duration">2026 - Present</span>
+            </div>
+            <p class="education-institution">LPEC CAMPUS - Matara Branch</p>
+            <p class="education-description">
+                 <a href="#">Certificate Pending....</a>
+            </p>
+        </div>
+</section>
+
+<section id="contents" class="reveal">
+<h2>Contents</h2>
+ <div class="projects-grid">
+      <div class="project-box">
+        <div class="project-header">FreeFire<br></div>
+        <div class="project-content">
+          <p>
+Free Fire is a multiplayer battle royale mobile game developed by Garena for Android and iOS. It became the most downloaded mobile game globally in 2021 and is known for its engaging gameplay, where players battle to be the last survivor. As of now, it is considered one of the most popular mobile battle royale games, surpassing competitors like PUBG Mobile and Call of Duty: Mobile. 
+             <br><a href="https://ff.garena.com/en">Download</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://youtube.com/playlist?list=PLQmCm4fsWvqb9W5nO677ZopDzvShHfLGv&si=KARACE94WfNfFGie">View</a>
+          </p>
+          <div class="tags">
+            <span class="tag" >CS</span>
+            <span class="tag">BR</span>
+            <span class="tag">Carfland</span>
+            <span class="tag">Longwulf</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-box">
+        <div class="project-header">Indonesia Bus Simulation</div>
+        <div class="project-content">
+          <p>
+           Bus Simulator Indonesia is an entertaining driving game that allows you to see what it is like to be a bus driver in Indonesia. More than the simple gameplay, it also lets you customize plenty, from the graphics to the controls. However, the game could use optimizationto live up to its promise of providing an authentic experience.
+<br><a href="https://play.google.com/store/apps/details?id=com.maleo.bussimulatorid&hl=en-US">Download</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/playlist?list=PLQmCm4fsWvqbSROuoAk30U3tWuJUnYLzD">View</a>
+
+          </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+
+<div class="project-box">
+        <div class="project-header">Mine contents</div>
+        <div class="project-content">
+          <p>
+             I have uploaded videos made from my photos on my youtube, tiktok, and facebook accounts. If you search for induwara bodhigamage on youtube, tiktok, and facebook social media networks, you will see my accounts. Go to them and click the follow and subscribe buttons to support me.
+<br><a href="https://www.tiktok.com/@induwarabodhigamage?_r=1&_t=ZS-935L12w7IaP">Tiktok</a>
+&nbsp&nbsp&nbsp<a href="https://www.facebook.com/share/1GdYBqSpbj/">Facebook</a>
+&nbsp&nbsp&nbsp<a href="http://www.youtube.com/@MrInduwaOfficial">Youtube</a>
+          </p>
+          <div class="tags">
+            <span class="tag">Youtube Shorts</span>
+            <span class="tag">Tiktok</span>
+            <span class="tag">Facebook Reels</span>
+          </div>
+        </div>
+      </div>
+
+<div class="project-box">
+        <div class="project-header">Euro Truck Simulater</div>
+        <div class="project-content">
+          <p>
+            Euro Truck Simulator 2 is a truck simulation game that offers a realistic and immersive experience for players. The game features a vast European map, with over 60 cities and a selection of licensed trucks from real-life manufacturers. Players can engage in both truck driving and business simulation, starting as a solo driver and building their own logistics company. The game emphasizes realism, including mechanics like fuel consumption, wear and tear, and sleep cycles. Euro Truck Simulator 2 also supports extensive modding, allowing players to expand gameplay with thousands of mods from the community. The game has been critically acclaimed and continues to be a popular choice among simulation game enthusiasts.
+<br><a href="https://eurotrucksimulator2.com/download.php">Download</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/playlist?list=PLQmCm4fsWvqYdOA5XHYa0-MdBUnu_RqzZ">View</a>
+
+          </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-header">Clash Of Cans</div>
+        <div class="project-content">
+          <p>
+Clash of Clans is a popular mobile strategy game where players build and upgrade their villages, train armies, and engage in battles against other players and clans.
+Gameplay Mechanics
+Village Building: Players construct and upgrade various buildings, including resource collectors, defenses, and army training facilities. The goal is to create a stronghold that can withstand enemy attacks while efficiently gathering resources like Gold, Elixir, and Dark Elixir. 
+2
+Troop Types: The game features a variety of troops, including Barbarians, Archers, Wizards, and Dragons, each with unique abilities. Players can customize their army composition to develop effective strategies for attacking enemy bases. 
+1
+Clan System: Players can join or create clans, allowing them to collaborate with others, participate in Clan Wars, and earn rewards. Clan dynamics play a crucial role in the game, as teamwork can lead to significant advantages in battles.
+<br><a href="https://www.bing.com/ck/a?!&&p=8150ee9f024ea7f225749b9eff943e0426c9243f078f6e008e77a659559bc352JmltdHM9MTc2ODQzNTIwMA&ptn=3&ver=2&hsh=4&fclid=30e7b0c2-15c9-6335-0196-a4d1148c623a&psq=about+clash+of+clans&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vcGMtc3RvcmUvZ2FtZXMvZGV0YWlscz9pZD1jb20uc3VwZXJjZWxsLmNsYXNob2ZjbGFucyZobD1lbg">Download</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/playlist?list=PLQmCm4fsWvqaT1Y8LimJUFRZ6Jp2zogfL">View</a>
+
+	  </p>
+          <div class="tags">
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Singleplayer</span>          </div>
+        </div>
+      </div>
+      
+      <div class="project-box">
+        <div class="project-header">Srilanka Bus Simulation</div>
+        <div class="project-content">   
+          <p>
+Driving Simulator Srilanka is a free simulation game that allows players to experience driving in a realistic environment inspired by Sri Lanka. The game features a variety of driving scenarios, including city driving, village driving, hill driving, and off-road driving. Players can customize their bus design using texture design settings, adding a personal touch to their driving experience. The game is available for download on Android devices and offers a detailed and engaging driving experience with various features such as realistic AI traffic, sky systems, and high-end graphics support.
+<br><a href="https://play.google.com/store/apps/details?id=com.DCGames.DrivingSimulatorSrilanka&hl=en-US">Download</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.youtube.com/playlist?list=PLQmCm4fsWvqYRmGvigs1bw3Vf94ABowiT">View</a>
+
+          </p>
+          <div class="tags">
+           <span class="tag">Singleplayer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="platforms">
+<h2 class="reveal">Platforms</h2>
+<div class="grid reveal">
+ <div class="card">Facebook - 2.6K Followers<div class="bar"> <div class="fill11">
+</div></div></div>
+ <div class="card">Tiktok - 368 Followers<div class="bar"> <div class="fill12">
+</div></div></div>
+ <div class="card">Youtube - 179 Subscribers<div class="bar"> <div class="fill13">
+</div></div></div>
+ <div class="card">Bluesky<div class="bar"> <div class="fill14">
+</div></div></div>
+ <div class="card">Dribbble<div class="bar"> <div class="fill15">
+</div></div></div>
+ <div class="card">Github<div class="bar"> <div class="fill16">
+</div></div></div>
+ <div class="card">Wokwi<div class="bar"> <div class="fill17">
+</div></div></div>
+ <div class="card">Slack<div class="bar"> <div class="fill18">
+</div></div></div>
+</div>
+</section>
+<!--
+<div class="grid reveal">
+ <div class="card project">
+  <img src="fb.jpg">
+  <h3>Premium Portfolio</h3>
+  <p>Luxury animated website</p>
+ </div>
+ <div class="card project">
+  <img src="fb.jpg">
+  <h3>Business Site</h3>
+  <p>Corporate landing page</p>
+ </div>
+</div>
+-->
+<section id="contact" class="reveal">
+<h2>Contact</h2>
+<form>
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea rows="4" placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+</section>
+
+<center>
+<div class="iframe-container" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2616.692687130573!2d80.83885483939562!3d6.142802170679732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1769481474149!5m2!1sen!2slk" width="55%" height="600" style="border:0; align:center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</center>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://github.com/Induwara007" target="_blank"> 
+ GitHub</a> | 
+      <a href="https://www.tiktok.com/@induwarabodhigamage?_r=1&_t=ZS-935L12w7IaP" target="_blank" > 
+ Tiktok</a> | 
+      <a href="https://www.facebook.com/share/1GdYBqSpbj/" target="_blank"  > 
+Facebook</a> | 
+      <a href="http://www.youtube.com/@MrInduwaOfficial" target="_blank"> 
+ Youtube</a> | 
+      <a href="https://Wa.me/+94785176952by/?text=Hello+Induwara+Bodhigamage" target="_blank" >
+ Whatsapp</a> 
+    </div>
+    <p>&copy; 2025 - InduwaraBodhigamage. All Rights Reserved.</p>
+  </footer><div id="top" onclick="scrollToTop()">↑</div>
+
+<div class="footer">
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div></div>
+</label>
+ 
+<script>
+/* LOADER */
+window.onload=()=>document.getElementById("loader").style.display="none";
+
+/* CURSOR */
+const cur=document.querySelector(".cursor");
+document.addEventListener("mousemove",e=>{
+cur.style.left=e.clientX+"px";
+cur.style.top=e.clientY+"px";
+});
+
+/* THEME */
+function toggleTheme(){
+document.body.classList.toggle("light");
+localStorage.theme=document.body.className;
+}
+if(localStorage.theme)document.body.className=localStorage.theme;
+
+/* TYPING */
+const words=["Induwara Bodhigamage","Photographer","Gamer"," Content Creator","Frontend Developer"];
+let i=0,j=0,del=false;
+setInterval(()=>{
+const w=words[i];
+document.querySelector(".typing").textContent=w.slice(0,del?--j:++j);
+if(j===w.length+5)del=true;
+if(j===0){del=false;i=(i+1)%words.length}
+},120);
+
+/* REVEAL + SKILLS */
+const io=new IntersectionObserver(e=>{
+e.forEach(x=>{
+if(x.isIntersecting){
+x.target.classList.add("show");
+x.target.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset+"%");
+}
+});
+});
+document.querySelectorAll(".reveal").forEach(r=>io.observe(r));
+
+/* PARTICLES */
+const c=document.getElementById("bg"),ctx=c.getContext("2d");
+let w=innerWidth,h=innerHeight;c.width=w;c.height=h;
+let p=Array.from({length:80},()=>({x:Math.random()*w,y:Math.random()*h,vx:Math.random()-.5,vy:Math.random()-.5}));
+(function anim(){
+ctx.clearRect(0,0,w,h);
+p.forEach(a=>{
+a.x+=a.vx;a.y+=a.vy;
+if(a.x<0||a.x>w)a.vx*=-1;
+if(a.y<0||a.y>h)a.vy*=-1;
+ctx.fillStyle="#38bdf8";ctx.fillRect(a.x,a.y,2,2);
+});
+requestAnimationFrame(anim);
+})();
+
+/* SCROLL TOP */
+window.onscroll=()=>topBtn.style.display=scrollY>500?"block":"none";
+function scrollToTop(){scrollTo({top:0,behavior:"smooth"})}
+</script>
+<script>
+/* Chatbot toggle */
+function toggleChat(){
+ const c=document.getElementById('chatbot')
+ c.style.display=c.style.display==='flex'?'none':'flex'
+}
+</script>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
